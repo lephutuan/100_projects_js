@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #551ac2;
+  font-family: serif;
+}
+
+.button {
+  position: relative;
+  padding: 15px 20px;
+  font-size: 1.6rem;
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s;
+}
