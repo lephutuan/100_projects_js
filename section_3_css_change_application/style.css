@@ -1,0 +1,80 @@
+:root {
+  --base: rgb(255, 0, 0);
+  --blur: 0px;
+  --padding: 20px;
+  --width: 50%;
+  --border-radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
+
+.container {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  color: var(--base);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.css-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+
+label {
+  color: white;
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+img {
+  width: var(--width);
+  height: 80%;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  filter: blur(var(--blur));
+  transition: all 0.3s ease;
+  margin: 1rem auto;
+  background-color: var(--base);
+}
+
+input[type="color"] {
+  width: 10%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 0.5rem;
+}

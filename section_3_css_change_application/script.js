@@ -1,6 +1,6 @@
-const inputs = document.querySelectorAll(".controls input");
+const inputs = document.querySelectorAll(".css-controller input");
 
-inputs.forEach((inputs) => inputs.addEventListener("change", handleUpdate));
+inputs.forEach((inputs) => inputs.addEventListener("input", handleUpdate));
 
 function handleUpdate() {
   const suffix = this.dataset.sizing || "";
