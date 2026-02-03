@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Change the CSS of below image! With the help of Sliders</h1>
+      <span class="heading">JavaScript</span>
+      <div class="css-controller">
+        <label for="base">Base color</label>
+        <input type="color" id="base" name="base" value="#ff0000" />
+        <label for="width">Width</label>
+        <input
+          type="range"
+          id="width"
+          name="width"
+          min="10"
+          max="100"
+          value="50"
+          data-sizing="%"
+        />
+        <label for="border-radius">Border-radius</label>
+        <input
+          type="range"
+          id="border-radius"
+          name="border-radius"
+          min="10"
+          max="100"
+          value="5"
+          data-sizing="px"
+        />
+        <label for="padding">Padding</label>
+        <input
+          type="range"
+          id="padding"
+          name="padding"
+          min="10"
+          max="200"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+        <label for="blur">Blur</label>
+        <input
+          type="range"
+          id="blur"
+          name="blur"
+          min="0"
+          max="25"
+          value="0"
+          data-sizing="px"
+        />
+      </div>
+      <img src="https://media.istockphoto.com/id/941009200/vi/anh/h%C6%B0%C6%A1u-%C4%91%E1%BB%8F-h%C6%B0%C6%A1u-%C4%91%E1%BB%8F-trong-lush-green-fairytale-growth-concept-foggy-forest-landscape-image.jpg?s=612x612&w=is&k=20&c=fEQ2w4K9GXY7mG4yLWsZwluBWmyWSOeWDcYMTDz6en4=" alt="Sample Image">
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
