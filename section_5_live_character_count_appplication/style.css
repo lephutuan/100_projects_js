@@ -3,3 +3,61 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #032137;
+  font-family: sans-serif;
+}
+
+.container {
+  background: #0c3363;
+  width: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container textarea {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #032137;
+  resize: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #0c3363;
+  font-family: sans-serif;
+}
+
+.container textarea::placeholder {
+  color: #ccc;
+}
+
+.container p {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.container p .counter {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 10px;
+  color: #00ff00;
+}
