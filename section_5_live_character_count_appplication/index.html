@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Live Character Count</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Live Character Counter</h1>
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+        placeholder="Write your text here !!!"
+        onkeyup="countingCharacters()"
+      ></textarea>
+      <p>
+        Total characters you typed including spaces:
+        <span class="counter">0</span>
+      </p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
