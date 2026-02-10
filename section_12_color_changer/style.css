@@ -3,3 +3,42 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#grey {
+  background-color: #808080;
+  color: white;
+}
+#yellow {
+  background-color: #ffd700;
+  color: black;
+}
+#white {
+  background-color: #ffffff;
+  color: black;
+}
+#blue {
+  background-color: #0000ff;
+  color: white;
+}
