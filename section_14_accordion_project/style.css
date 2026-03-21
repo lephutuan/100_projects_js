@@ -62,7 +62,7 @@ h1 {
   transition: transform 0.3s;
 }
 
-.container .accordion .active .heading::before {
+.container .accordion.active .heading::before {
   content: "-";
   font-size: 2rem;
   transform: translateY(-50%) rotate(180deg);
@@ -80,12 +80,12 @@ h1 {
     padding 0.3s;
 }
 
-.container .accordion .active .heading {
+.container .accordion.active .text {
   height: auto;
   padding: 10px;
 }
 
-.container .accordion .active .text {
-  background: linear-gradient(to right, #ecf0f1, #3498db);
-  color: #99b1fc;
+.container .accordion.active .heading {
+  background: linear-gradient(to right, #3498db, #ecf0f1);
+  color: #2c3e50;
 }
