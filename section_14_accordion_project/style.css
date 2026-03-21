@@ -3,3 +3,89 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #71b7e6, #9b59b6);
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: orangered;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .accordion {
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+  transition:
+    height 0.5s,
+    padding 0.5s;
+}
+
+.container .accordion .heading {
+  font-size: 1.5rem;
+  padding: 15px;
+  background: #3498db;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s;
+  position: relative;
+}
+
+.container .accordion .heading::before {
+  content: "+";
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 800;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.container .accordion .active .heading::before {
+  content: "-";
+  font-size: 2rem;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.container .accordion .text {
+  height: 0;
+  padding: 0 15px;
+  background: #ecf0f1;
+  overflow: hidden;
+  font-size: 1rem;
+  border-radius: 0 0 5px 5px;
+  transition:
+    height 0.5s,
+    padding 0.3s;
+}
+
+.container .accordion .active .heading {
+  height: auto;
+  padding: 10px;
+}
+
+.container .accordion .active .text {
+  background: linear-gradient(to right, #ecf0f1, #3498db);
+  color: #99b1fc;
+}
