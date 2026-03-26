@@ -34,15 +34,15 @@ body {
 
 @keyframes jump {
   0% {
-    transform: translateY(0, 0) rotateX(180deg);
+    transform: translateY(0, 0) rotate(180deg);
   }
   25% {
-    transform: scale(2), translate(0, -150px);
+    transform: scale(2) translate(0, -150px);
   }
   75% {
-    transform: scale(1.1, 1.1), translate(0, 200px);
+    transform: scale(1.1, 1.1) translate(0, 200px);
   }
   100% {
-    transform: translateY(0, 0) rotateX(360deg);
+    transform: translate(0, 0) rotate(360deg);
   }
 }
