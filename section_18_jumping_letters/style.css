@@ -3,3 +3,46 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.letters {
+  perspective: 1000px;
+  font-family: cursive;
+  color: ghostwhite;
+}
+
+.letters span {
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10rem;
+  line-height: 0.8;
+}
+
+.letters span.active {
+  animation: jump 2s ease-in-out;
+  transform-origin: bottom left;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0, 0) rotateX(180deg);
+  }
+  25% {
+    transform: scale(2), translate(0, -150px);
+  }
+  75% {
+    transform: scale(1.1, 1.1), translate(0, 200px);
+  }
+  100% {
+    transform: translateY(0, 0) rotateX(360deg);
+  }
+}
