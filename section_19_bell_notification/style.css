@@ -74,7 +74,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.notification::after {
+.notification.count::after {
   opacity: 1;
   transform: scale(1);
 }
