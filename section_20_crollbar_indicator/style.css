@@ -2,4 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to right, #009a8b, #5500cc, #66d07c);
+  font-family: sans-serif;
+}
+
+.text {
+  color: #000;
+  line-height: 10rem;
+  text-align: center;
+}
+
+span {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0p 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem;
+  display: inline-block;
+  width: 150px;
+  transition: transform 0.2s;
+}
+
+span:hover {
+  transform: scale(1.05);
+}
+
+.indicator {
+  background: linear-gradient(to right, #1e56aa, #7909d4, #d88a4a);
+  height: 20px;
+  border-radius: 4px;
+  width: 20%;
+  position: fixed;
+  top: 0px;
 }
